@@ -1,0 +1,49 @@
+---
+import Navigation from "../components/Navigation.astro";
+
+const skills = [
+	"HTML",
+	"CSS",
+	"JavaScript",
+	"Astro",
+	"Git",
+	"Figma",
+	"XAML",
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Proyectos - Sunner</title>
+  </head>
+  <body>
+    <Navigation></Navigation>
+    <nav>
+      
+    </nav>
+    <h2>Mis Habilidades</h2>
+    <ul>
+        {
+            skills.map
+            (skill =>(
+                <li>{skill}</li>
+            ))
+
+        }
+    </ul>
+    <h1>Mis proyectos recientes</h1>
+    <section>
+      <ul>
+        <li><strong>Astro Portfolio:</strong> Un portafolio web moderno construido con Astro para mostrar mis trabajos.</li>
+        <li><strong>Blog Tecnológico:</strong> Un blog donde comparto tutoriales y noticias sobre desarrollo web.</li>
+        <li><strong>App de Tareas:</strong> Una aplicación sencilla para organizar tus tareas diarias con funciones de prioridad y fechas límite.</li>
+      </ul>
+      <p>
+        Estoy constantemente trabajando en nuevos proyectos y actualizando estos para mejorar sus funcionalidades.
+      </p>
+    </section>
+  </body>
+</html>
